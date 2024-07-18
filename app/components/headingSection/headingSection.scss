@@ -1,0 +1,25 @@
+@import "../../../sass/variables.scss";
+
+.heading_section {
+  padding: 10px 0;
+  background-color: $primary-color;
+
+  .rfm-marquee {
+    span {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 70px;
+      text-align: center;
+      margin: 0 25px;
+
+      &.inner {
+        -webkit-text-stroke: 1px #ffffff;
+        -webkit-text-fill-color: #ffffff00;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 35px;
+      }
+    }
+  }
+}

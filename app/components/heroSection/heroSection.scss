@@ -1,0 +1,179 @@
+@import "../../../sass/variables.scss";
+
+.hero_section {
+  height: 100vh;
+
+  position: relative;
+  // color: rgb(var(--foreground-rgb));
+  // background: linear-gradient(
+  //     to bottom,
+  //     transparent,
+  //     rgb(var(--background-end-rgb))
+  //   )
+  //   rgb(11 8 38);
+
+  background: linear-gradient(180deg, $primary-dark-color, #03060c, #03060c);
+  background-size: 180% 180%;
+  animation: gradient-animation 1s ease infinite;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    text-align: center;
+
+    .subtitle {
+      font-size: 28px;
+      color: rgb(152, 152, 152);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      // background: linear-gradient(
+      //   120deg,
+      //   #1c99fe 20.69%,
+      //   #7644ff 50.19%,
+      //   #fd4766 79.69%
+      // );
+      // -webkit-background-clip: text !important;
+      // -webkit-text-fill-color: transparent !important;
+
+      small {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: #36b802;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+
+    .title {
+      font-size: 120px;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+      margin-top: 10px;
+
+      @media (max-width: 768px) {
+        font-size: 60px;
+      }
+    }
+  }
+
+  // socail
+  .social_media {
+    color: rgb(201, 201, 201);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    bottom: -100%;
+    left: 15px;
+    animation: move-up 2s ease forwards;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 150px;
+      background-color: rgb(188, 188, 188);
+      bottom: -170px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  // balles container
+  .balls_container {
+    /*   border:2px dashed #fff; */
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    // bottom: 0;
+    // right: 0;
+    animation: rotate-360 3s infinite linear;
+    filter: blur(100px);
+
+    .color-ball {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .red {
+      background: red;
+      right: 0px;
+      top: 50px;
+      animation: glow 5s infinite;
+    }
+
+    .yellow {
+      background: #804beb;
+      left: 250px;
+      top: 70px;
+      animation: glow 2s infinite;
+    }
+
+    .cyan {
+      background: cyan;
+      left: 100px;
+      top: 100px;
+      animation: glow 3s infinite;
+    }
+  }
+}
+
+// animation
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rotate-360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes glow {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(200%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+@keyframes move-up {
+  0% {
+    bottom: -100%;
+  }
+
+  100% {
+    bottom: 170px;
+  }
+}
