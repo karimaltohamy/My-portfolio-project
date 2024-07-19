@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { WOW } from "wowjs";
 import "animate.css/animate.min.css";
 
-const WowWrapper = ({ children }: { children: any }) => {
+const WowWrapper = ({ children }) => {
   useEffect(() => {
     new WOW({
       boxClass: "wow",

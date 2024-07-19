@@ -12,7 +12,9 @@ export default function Home() {
       <HeroSection />
       <ExperienceSection />
       <Headingsection />
-      <FeaturedWork />
+      <Suspense fallback={"Loading..."}>
+        <FeaturedWork />
+      </Suspense>
       <MySkills />
       <Headingsection />
       <ContactUs />
