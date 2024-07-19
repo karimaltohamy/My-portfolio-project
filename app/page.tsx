@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import ExperienceSection from "./components/experienceSection/ExperienceSection.component";
 import FeaturedWork from "./components/featuredWork/FeaturedWork.component";
 import Headingsection from "./components/headingSection/Headingsection.component";
@@ -12,9 +11,7 @@ export default function Home() {
       <HeroSection />
       <ExperienceSection />
       <Headingsection />
-      <Suspense fallback={"Loading..."}>
-        <FeaturedWork />
-      </Suspense>
+      <FeaturedWork />
       <MySkills />
       <Headingsection />
       <ContactUs />
