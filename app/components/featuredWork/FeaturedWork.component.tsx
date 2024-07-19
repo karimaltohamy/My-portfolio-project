@@ -24,11 +24,12 @@ const FeaturedWork = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {portfolioData.length > 0 &&
-              portfolioData.map((item) => {
+              portfolioData.map((item, i) => {
                 return (
                   <Link
                     href={item.link}
                     className="project_box wow animate__animated animate__zoomIn"
+                    key={i}
                   >
                     <div className="image">
                       <Image

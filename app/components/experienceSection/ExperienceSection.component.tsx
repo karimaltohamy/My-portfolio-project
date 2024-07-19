@@ -62,7 +62,7 @@ const ExperienceSection = () => {
                 </li>
                 <li>
                   - Conducted regular performance testing and optimization to
-                  ensure the dashboard's reliability and efficiency.
+                  ensure the dashboards reliability and efficiency.
                 </li>
               </ul>
             </div>
