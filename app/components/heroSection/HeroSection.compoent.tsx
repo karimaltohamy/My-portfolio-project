@@ -23,22 +23,22 @@ const HeroSection = () => {
 
         <ul className="social_media">
           <li>
-            <a href="#">
-              <FaFacebookF size={24} />
-            </a>
-          </li>
-          <li>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/karim-altohamy-816a57235/">
               <FaLinkedin size={24} />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://github.com/karimaltohamy">
               <FaGithub size={24} />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.facebook.com/karim.badr.92167?mibextid=LQQJ4d">
+              <FaFacebookF size={24} />
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/karim_altohamy">
               <FaTwitter size={24} />
             </a>
           </li>
