@@ -1,13 +1,15 @@
+"use client";
+
 import { portfolioData } from "@/utils/data";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import "./featuredWork.scss";
-import project1 from "../../../assets/images/project-1.png";
 
 import Image from "next/image";
 import WowWrapper from "../wowWrapper/WowWrapper.component";
 
 const FeaturedWork = () => {
+  const [projects, setProjects] = useState<any[]>(portfolioData);
   return (
     <WowWrapper>
       <div className="featured_work">
@@ -23,8 +25,8 @@ const FeaturedWork = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {portfolioData.length > 0 &&
-              portfolioData.map((item, i) => {
+            {projects.length > 0 &&
+              projects.map((item, i) => {
                 return (
                   <Link
                     href={item.link}
