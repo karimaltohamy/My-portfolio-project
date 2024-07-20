@@ -3,7 +3,6 @@ import "./footer.scss";
 import { FaFacebookF, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
-  const dateToday = new Date();
   return (
     <footer>
       <div className="container">
@@ -32,9 +31,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-        <p className="desc">
-          © {dateToday.getFullYear()} All Rights Reserved by Karim Altohamy
-        </p>
+        <p className="desc">© All Rights Reserved by Karim Altohamy</p>
       </div>
     </footer>
   );

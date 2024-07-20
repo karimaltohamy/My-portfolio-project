@@ -10,6 +10,7 @@ import WowWrapper from "../wowWrapper/WowWrapper.component";
 
 const FeaturedWork = () => {
   const [projects, setProjects] = useState<any[]>(portfolioData);
+
   return (
     <WowWrapper>
       <div className="featured_work">
