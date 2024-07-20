@@ -6,7 +6,10 @@ import React, { useState } from "react";
 import "./featuredWork.scss";
 
 import Image from "next/image";
-import WowWrapper from "../wowWrapper/WowWrapper.component";
+import dynamic from "next/dynamic";
+const WowWrapper = dynamic(() => import("../wowWrapper/WowWrapper.component"), {
+  ssr: false,
+});
 
 const FeaturedWork = () => {
   const [projects, setProjects] = useState<any[]>(portfolioData);

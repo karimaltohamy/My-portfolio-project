@@ -1,7 +1,10 @@
 import React from "react";
 import "./experienceSection.scss";
 import { PiBagSimpleBold } from "react-icons/pi";
-import WowWrapper from "../wowWrapper/WowWrapper.component";
+import dynamic from "next/dynamic";
+const WowWrapper = dynamic(() => import("../wowWrapper/WowWrapper.component"), {
+  ssr: false,
+});
 
 const ExperienceSection = () => {
   return (

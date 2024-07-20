@@ -3,7 +3,10 @@ import "./contactUs.scss";
 import FormContect from "../formContact/FormContect.component";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
-import WowWrapper from "../wowWrapper/WowWrapper.component";
+import dynamic from "next/dynamic";
+const WowWrapper = dynamic(() => import("../wowWrapper/WowWrapper.component"), {
+  ssr: false,
+});
 
 const ContactUs = () => {
   return (

@@ -1,6 +1,9 @@
 import React from "react";
 import "./formContact.scss";
-import WowWrapper from "../wowWrapper/WowWrapper.component";
+import dynamic from "next/dynamic";
+const WowWrapper = dynamic(() => import("../wowWrapper/WowWrapper.component"), {
+  ssr: false,
+});
 
 const FormContect = () => {
   return (
