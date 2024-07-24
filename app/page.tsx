@@ -14,7 +14,6 @@ export default function Home() {
       <FeaturedWork />
       <MySkills />
       <Headingsection />
-      <ContactUs />
     </>
   );
 }
