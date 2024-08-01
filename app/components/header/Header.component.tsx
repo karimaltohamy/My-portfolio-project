@@ -1,6 +1,7 @@
 import React from "react";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import "./header.scss";
+import DownloadButton from "../downloadButton/DownloadButton.component";
 
 const Header = () => {
   return (
@@ -11,10 +12,7 @@ const Header = () => {
             <span className="text-[25px] font-bold">K</span>
           </div>
           <div className="flex items-center gap-5">
-            <h5 className="text-[18px] font-semibold">Menu</h5>
-            <button>
-              <HiOutlineMenuAlt2 size={25} />
-            </button>
+            <DownloadButton />
           </div>
         </div>
       </div>
