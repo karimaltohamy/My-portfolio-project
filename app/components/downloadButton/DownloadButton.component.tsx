@@ -13,7 +13,7 @@ const DownloadButton = () => {
 
   return (
     <button className="btn_Download" onClick={handleDownload}>
-      Download The Resume
+      Download Resume
     </button>
   );
 };

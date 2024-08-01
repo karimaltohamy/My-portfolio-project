@@ -10,5 +10,10 @@ header {
     padding: 5px 20px;
     border: 2px solid white;
     border-radius: 50px;
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+      padding: 4px 15px;
+    }
   }
 }
