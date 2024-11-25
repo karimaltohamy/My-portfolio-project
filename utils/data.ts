@@ -74,7 +74,7 @@ export const portfolioData: Project[] = [
     title: "Courses Website",
     desc: "Education",
     image: project8,
-    link: "https://karimaltohamy.github.io/5CodeCoursesProject",
+    link: "https://karimaltohamy.github.io/5CodeCoursesProject-ar",
     year: "2023",
   },
   {
