@@ -36,6 +36,7 @@ const FeaturedWork = () => {
                     href={item.link}
                     className="project_box wow animate__animated animate__zoomIn"
                     key={i}
+                    target="_blank"
                   >
                     <div className="image">
                       <Image
