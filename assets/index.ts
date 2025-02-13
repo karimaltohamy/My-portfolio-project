@@ -8,6 +8,9 @@ import project7 from "./images/project-7.png";
 import project8 from "./images/project-8.png";
 import project9 from "./images/project-9.png";
 import project10 from "./images/project-10.png";
+import project11 from "./images/project-11.png";
+import project12 from "./images/project-12.png";
+import project13 from "./images/project-13.png";
 
 export {
   project1,
@@ -20,4 +23,7 @@ export {
   project8,
   project9,
   project10,
+  project11,
+  project12,
+  project13,
 };

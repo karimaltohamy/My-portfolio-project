@@ -43,6 +43,7 @@ const FeaturedWork = () => {
                         src={item.image}
                         alt="img-porject"
                         loading="lazy"
+                        className="object-top object-cover"
                       />
                     </div>
                     <div className="text">

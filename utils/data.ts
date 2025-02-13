@@ -9,6 +9,9 @@ import {
   project7,
   project8,
   project9,
+  project11,
+  project12,
+  project13,
 } from "@/assets";
 
 interface Project {
@@ -21,10 +24,24 @@ interface Project {
 
 export const portfolioData: Project[] = [
   {
-    title: "Fiiverr App",
-    desc: "Freelance Services Website",
-    image: project3,
-    link: "https://fiiverr-app-frontend.vercel.app",
+    title: "Prosper Egypt",
+    desc: "Facility Management",
+    image: project11,
+    link: "https://prosper.rasid.com.eg",
+    year: "2023",
+  },
+  {
+    title: "Doctor Voice",
+    desc: "Voice Messaging Mobile App",
+    image: project12,
+    link: "https://doctorvoice.net",
+    year: "2023",
+  },
+  {
+    title: "Doctor Voice Dashboard",
+    desc: "Voice Messaging Mobile App Dashboard",
+    image: project13,
+    link: "https://doctorvoice.net",
     year: "2023",
   },
   {
@@ -33,21 +50,6 @@ export const portfolioData: Project[] = [
     image: project2,
     link: "https://appointment-booking-doctor.vercel.app",
     year: "2024",
-  },
-  {
-    title: "Multi Vendor Ecommerce",
-    desc: "Ecommerce Website",
-    image: project1,
-    link: "https://multi-vendor-ecommerce-theta.vercel.app/",
-    year: "2023",
-  },
-
-  {
-    title: "Admin Dashboard",
-    desc: "Dashboard",
-    image: project4,
-    link: "https://admin-dashboard-app-teal.vercel.app",
-    year: "2023",
   },
   {
     title: "Digital marketing Company",
