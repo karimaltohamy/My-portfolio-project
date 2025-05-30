@@ -11,6 +11,7 @@ import project10 from "./images/project-10.png";
 import project11 from "./images/project-11.png";
 import project12 from "./images/project-12.png";
 import project13 from "./images/project-13.png";
+import project14 from "./images/project-14.png";
 
 export {
   project1,
@@ -26,4 +27,5 @@ export {
   project11,
   project12,
   project13,
+  project14,
 };

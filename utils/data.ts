@@ -12,6 +12,7 @@ import {
   project11,
   project12,
   project13,
+  project14,
 } from "@/assets";
 
 interface Project {
@@ -50,6 +51,13 @@ export const portfolioData: Project[] = [
     image: project2,
     link: "https://appointment-booking-doctor.vercel.app",
     year: "2024",
+  },
+  {
+    title: "Tarwiqa",
+    desc: "Discover Trending Makeup Products",
+    image: project14,
+    link: "",
+    year: "2023",
   },
   {
     title: "Digital marketing Company",
